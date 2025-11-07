@@ -3,10 +3,10 @@ import employee_info
 def test_get_employees_by_age_range():
     result = []
     test = [
-        {"name": "Chloe",  "age": 35, "department": "Engineering", "salary": 70000},
         {"name": "Peter", "age": 40, "department": "Sales", "salary": 60000}
     ]
 
+    #employees whose age are more than 35 and less than 50
     result = employee_info.get_employees_by_age_range(35, 50)
     
     assert(result == test)
